@@ -41,14 +41,14 @@ console.log(contarCaracteres)*/
 function contarCaractere(txts){
     return txts.length;
 }
-console.log(contarCaractere("oi"));
+console.log("Contagem de carcteres: " + contarCaractere("oi"));
 
 //EXERCÍCIO 5
 // inverter("javascript") → "tpircsaj"
 function inverter(txtInverso){
     return [...txtInverso].reverse().join('');
 }
-console.log(inverter('lua'));
+console.log("Palavra invertida: " + inverter('lua'));
 
 //EXERCÍCIO 6
 // somaArray([1, 2, 3, 4]) → 10
@@ -59,4 +59,20 @@ function somaArray(num){
     }
         return tot
     
-}console.log(somaArray([1,2,3,4]))
+}console.log("Soma do Array: " + somaArray([1,2,3,4]))
+
+//EXERCÍCIO 7
+// maiorArray([5, 12, 3, 8]) → 12
+let maior
+function maiorArray(numero){
+     let maior = numero[0];
+     for (let i = 1; i < numero.length; i++ ){
+      if (numero[i] > maior) {
+        maior = numero[i]
+}             
+     } return maior
+    
+}console.log("Maior número array: " + maiorArray([1,12,8,4,5]))
+
+//EXERCÍCIO 8
+// filtrarPares([1, 2, 3, 4, 5, 6]) → [2, 4, 6]
