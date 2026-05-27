@@ -26,3 +26,7 @@ console.log("O número é " + parOuimpar(4) )
 
 //EXERCÍCIO 3
 // maiorTres(10, 5, 8) → 10
+function maiorTres(a,b,c){
+    return Math.max(a,b,c)
+}
+console.log( "o maior número é: " + maiorTres(10,5,8))
