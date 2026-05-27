@@ -49,3 +49,14 @@ function inverter(txtInverso){
     return [...txtInverso].reverse().join('');
 }
 console.log(inverter('lua'));
+
+//EXERCÍCIO 6
+// somaArray([1, 2, 3, 4]) → 10
+function somaArray(num){
+    let tot = 0;
+    for (const n of num){
+        tot += n;
+    }
+        return tot
+    
+}console.log(somaArray([1,2,3,4]))
