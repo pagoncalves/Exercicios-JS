@@ -30,3 +30,15 @@ function maiorTres(a,b,c){
     return Math.max(a,b,c)
 }
 console.log( "o maior número é: " + maiorTres(10,5,8))
+
+//EXERCÍCIO 4
+// contarCaracteres("hello") → 5
+/*
+let txt = "hello"
+    contarCaracteres = txt.length
+console.log(contarCaracteres)*/
+
+function contarCaractere(txts){
+    return txts.length
+}
+console.log(contarCaractere("oi"))
