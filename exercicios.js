@@ -95,10 +95,12 @@ function duplicar(params) {
 
        nArray.push(params[i])
         nArray.push(params[i])
-       
-    
+           
     } return nArray
-}console.log(duplicar([1,2,1]))
+}console.log("Elementos do array duplicados: " + duplicar([1,2,1]))
 
 //Exercicio 10
 // reverterArray([1, 2, 3]) → [3, 2, 1]
+function revers(nroReverso){
+    return nroReverso.reverse()
+} console.log("Elementos do array reverso: " + revers([1,2,3,4]))
