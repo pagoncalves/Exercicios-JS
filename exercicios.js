@@ -33,8 +33,7 @@ console.log( "o maior número é: " + maiorTres(10,5,8));
 
 //EXERCÍCIO 4
 // contarCaracteres("hello") → 5
-/*
-let txt = "hello"
+/*let txt = "hello"
     contarCaracteres = txt.length
 console.log(contarCaracteres)*/
 
@@ -72,7 +71,34 @@ function maiorArray(numero){
 }             
      } return maior
     
-}console.log("Maior número array: " + maiorArray([1,12,8,4,5]))
+}console.log("Maior número array: " + maiorArray([1,12,8,4,5])) 
 
 //EXERCÍCIO 8
 // filtrarPares([1, 2, 3, 4, 5, 6]) → [2, 4, 6]
+function filtrarPares(nro){
+   let par = []
+    for (let i= 0; i < nro.length; i++ ){ //i = indice do array e enquanto ele for menor que tamanho do array e auto soma
+        if (nro[i]%2 == 0){ //uma condicional para verificar se o resto da divisão do item na indice é igual a 0
+          par.push(nro[i]) //se for cria um novo array com os itens do anteriores
+        } 
+      } return par
+    } 
+    
+ console.log( "Retorna apenas pares do array: " + filtrarPares([2,5,8,12]) )
+console.log( "Retorna apenas pares do array: "+ filtrarPares([1,2,5,8,12,42,67,450,61]) )
+
+//EXERCÍCIO 9
+// duplicar([1, 2, 3]) → [1, 1, 2, 2, 3, 3]
+function duplicar(params) {
+    let nArray = []
+    for(let i = 0; i < params.length; i++){
+
+       nArray.push(params[i])
+        nArray.push(params[i])
+       
+    
+    } return nArray
+}console.log(duplicar([1,2,1]))
+
+//Exercicio 10
+// reverterArray([1, 2, 3]) → [3, 2, 1]
