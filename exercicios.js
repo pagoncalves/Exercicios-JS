@@ -104,3 +104,14 @@ function duplicar(params) {
 function revers(nroReverso){
     return nroReverso.reverse()
 } console.log("Elementos do array reverso: " + revers([1,2,3,4]))
+
+//EXERCÍCIOS EXTRA
+//Exercício 16: Média de Array
+function mediaArray(som){
+    let media = 0
+    for(let i = 0; i < som.length;i++){
+        media += som[i] 
+    } return media/som.length
+
+} console.log("Media entre vetores: " + mediaArray([2,4,6,8]))
+console.log("Media entre vetores: " + mediaArray([10,20,30]))
