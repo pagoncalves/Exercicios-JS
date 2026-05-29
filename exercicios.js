@@ -115,3 +115,17 @@ function mediaArray(som){
 
 } console.log("Media entre vetores: " + mediaArray([2,4,6,8]))
 console.log("Media entre vetores: " + mediaArray([10,20,30]))
+
+//Exercício 17: Contar Elemento
+// Conte quantas vezes um número aparece no array
+// contarElemento([1, 2, 2, 3, 2, 4], 2) → 3
+// contarElemento([5, 5, 5, 5], 5) → 4
+function contarElemento(cElement,n){
+    let cont = 0
+    for(let i=0 ; i < cElement.length;i++){
+        if(cElement[i] == n){
+           cont++ 
+        }
+    }return cont
+} console.log("Quantas vezes o elemento aparece: " + contarElemento([1,2,2,3,2,4],2))
+console.log("Quantas vezes o elemento aparece: " + contarElemento([5, 5, 5, 5], 5))
